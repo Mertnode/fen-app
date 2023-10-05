@@ -29,7 +29,7 @@ const Homepage = () => {
                         <StyledBox>
                             <StyledLink to="/choose">
                                 <LightPurpleButton variant="contained" fullWidth>
-                                    Login
+                                    Giriş Yap
                                 </LightPurpleButton>
                             </StyledLink>
                             <StyledLink to="/chooseasguest">
