@@ -15,17 +15,13 @@ const Homepage = () => {
                 <Grid item xs={12} md={6}>
                     <StyledPaper elevation={3}>
                         <StyledTitle>
-                            Welcome to
+                            Fen Bilimleri 
                             <br />
-                            School Management
+                            Yönetim 
                             <br />
-                            System
+                            Sistemi
                         </StyledTitle>
-                        <StyledText>
-                            Streamline school management, class organization, and add students and faculty.
-                            Seamlessly track attendance, assess performance, and provide feedback.
-                            Access records, view marks, and communicate effortlessly.
-                        </StyledText>
+                       
                         <StyledBox>
                             <StyledLink to="/choose">
                                 <LightPurpleButton variant="contained" fullWidth>
@@ -36,7 +32,7 @@ const Homepage = () => {
                                 <Button variant="outlined" fullWidth
                                     sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}
                                 >
-                                    Login as Guest
+                                    
                                 </Button>
                             </StyledLink>
                             <StyledText>
