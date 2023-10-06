@@ -136,11 +136,9 @@ const LoginPage = ({ role }) => {
                         }}
                     >
                         <Typography variant="h4" sx={{ mb: 2, color: "#2c2143" }}>
-                            Öğrenci Girişi
+                        Fen Bilimleri Yönetim Sistemi
                         </Typography>
-                        <Typography variant="h7">
-                          Fen Bilimleri Öğrenci Sistemi
-                        </Typography>
+                        
                         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 2 }}>
                             {role === "Student" ? (
                                 <>
@@ -163,7 +161,7 @@ const LoginPage = ({ role }) => {
                                         required
                                         fullWidth
                                         id="studentName"
-                                        label="Enter your name"
+                                        label="Öğrenci Adı"
                                         name="studentName"
                                         autoComplete="name"
                                         autoFocus
@@ -178,12 +176,12 @@ const LoginPage = ({ role }) => {
                                     required
                                     fullWidth
                                     id="email"
-                                    label="Enter your email"
+                                    label="E-posta"
                                     name="email"
                                     autoComplete="email"
                                     autoFocus
                                     error={emailError}
-                                    helperText={emailError && 'Email is required'}
+                                    helperText={emailError && 'Şifre Zorunlu'}
                                     onChange={handleInputChange}
                                 />
                             )}
@@ -192,12 +190,12 @@ const LoginPage = ({ role }) => {
                                 required
                                 fullWidth
                                 name="password"
-                                label="Password"
+                                label="Şifre"
                                 type={toggle ? 'text' : 'password'}
                                 id="password"
                                 autoComplete="current-password"
                                 error={passwordError}
-                                helperText={passwordError && 'Password is required'}
+                                helperText={passwordError && 'Şifre Zorunlu'}
                                 onChange={handleInputChange}
                                 InputProps={{
                                     endAdornment: (
@@ -216,10 +214,10 @@ const LoginPage = ({ role }) => {
                             <Grid container sx={{ display: "flex", justifyContent: "space-between" }}>
                                 <FormControlLabel
                                     control={<Checkbox value="remember" color="primary" />}
-                                    label="Remember me"
+                                    label="Beni Hatırla"
                                 />
                                 <StyledLink href="#">
-                                    Forgot password?
+                                    Şifrenimi Unuttun ?
                                 </StyledLink>
                             </Grid>
                             <LightPurpleButton
@@ -230,28 +228,10 @@ const LoginPage = ({ role }) => {
                             >
                                 {loader ?
                                     <CircularProgress size={24} color="inherit" />
-                                    : "Login"}
+                                    : "Giriş"}
                             </LightPurpleButton>
-                            <Button
-                                fullWidth
-                                onClick={guestModeHandler}
-                                variant="outlined"
-                                sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}
-                            >
-                                Login as Guest
-                            </Button>
-                            {role === "Admin" &&
-                                <Grid container>
-                                    <Grid>
-                                        Don't have an account?
-                                    </Grid>
-                                    <Grid item sx={{ ml: 2 }}>
-                                        <StyledLink to="/Adminregister">
-                                            Sign up
-                                        </StyledLink>
-                                    </Grid>
-                                </Grid>
-                            }
+                           
+                          
                         </Box>
                     </Box>
                 </Grid>
