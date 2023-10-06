@@ -32,13 +32,13 @@ const Homepage = () => {
                                 <Button variant="outlined" fullWidth
                                     sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}
                                 >
-                                    
+                                    Kayıt Ol
                                 </Button>
                             </StyledLink>
                             <StyledText>
-                                Don't have an account?{' '}
+                                Zaten Hesabın Varmı?{' '}
                                 <Link to="/Adminregister" style={{color:"#550080"}}>
-                                    Sign up
+                                    Giriş Yap
                                 </Link>
                             </StyledText>
                         </StyledBox>

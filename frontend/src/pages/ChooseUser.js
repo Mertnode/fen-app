@@ -93,9 +93,9 @@ const ChooseUser = ({ visitor }) => {
                   <AccountCircle fontSize="large" />
                 </Box>
                 <StyledTypography>
-                  Admin
+                  Yönetim
                 </StyledTypography>
-                Login as an administrator to access the dashboard to manage app data.
+                Yönetici Olarak Giriş Yapın
               </StyledPaper>
             </div>
           </Grid>
@@ -106,9 +106,9 @@ const ChooseUser = ({ visitor }) => {
                   <School fontSize="large" />
                 </Box>
                 <StyledTypography>
-                  Student
+                  Öğrenci
                 </StyledTypography>
-                Login as a student to explore course materials and assignments.
+                Öğrenci Olarak Giriş Yapın
               </div>
             </StyledPaper>
           </Grid>
@@ -119,9 +119,9 @@ const ChooseUser = ({ visitor }) => {
                   <Group fontSize="large" />
                 </Box>
                 <StyledTypography>
-                  Teacher
+                  Öğretmen
                 </StyledTypography>
-                Login as a teacher to create courses, assignments, and track student progress.
+                Öğretmen Olarak Giriş Yapın
               </div>
             </StyledPaper>
           </Grid>

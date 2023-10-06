@@ -136,10 +136,10 @@ const LoginPage = ({ role }) => {
                         }}
                     >
                         <Typography variant="h4" sx={{ mb: 2, color: "#2c2143" }}>
-                            {role} Login
+                            Öğrenci Girişi
                         </Typography>
                         <Typography variant="h7">
-                            Welcome back! Please enter your details
+                          Fen Bilimleri Öğrenci Sistemi
                         </Typography>
                         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 2 }}>
                             {role === "Student" ? (
@@ -149,13 +149,13 @@ const LoginPage = ({ role }) => {
                                         required
                                         fullWidth
                                         id="rollNumber"
-                                        label="Enter your Roll Number"
+                                        label="Öğrenci Numarası"
                                         name="rollNumber"
                                         autoComplete="off"
                                         type="number"
                                         autoFocus
                                         error={rollNumberError}
-                                        helperText={rollNumberError && 'Roll Number is required'}
+                                        helperText={rollNumberError && 'Öğrenci Numarası Zorunlu'}
                                         onChange={handleInputChange}
                                     />
                                     <TextField
